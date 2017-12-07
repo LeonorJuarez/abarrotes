@@ -27,7 +27,7 @@ $total_general=$_POST["total_general"];
 
 
 // Abrimos la conexion a la base de datos    
-include("abre_conexion.php");    
+include("conect.php");    
 
 $_GRABAR_SQL = "INSERT INTO $principal (nombre,contaseña,nombre_empleado,ap_paterno,ap_materno,num_empleado,marca,nombre_contacto,direccion,correo,dias_ruta,telefono,codigo_producto,descripcion,precio_compra,precio_venta,id_provedor,total_ventas,total_general) VALUES ('$nombre','$contraseña','$nombre_empleado','$ap_paterno','$ap_materno','$num_empleado','$marca','$nombre_contacto','$direccion','$correo','$dias_ruta','$telefono','$codigo_producto','$descripcion','$precio_compra','$precio_venta','$id_provedor','$fecha','$cantidad_inicial','$pago_proveedor','$total_ventas','$total_general')";    
 mysql_query($abarrotes);   
